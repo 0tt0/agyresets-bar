@@ -8,15 +8,15 @@ A menu bar dashboard for [Metrix.Bar](https://metrix.bar) that watches Google An
 
 Open the link, then open the downloaded file — Metrix.Bar imports `.bar` files directly.
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.1.0/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.2.0/agy-resets.bar)
 
 Or paste this into your browser's address bar to import straight from the CDN:
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.1.0%2Fagy-resets.bar&sha256=0f31a92b3842fa177d74adcb38eddb5a4fb7c11975a421c0762c6c08bc381b02
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.2.0%2Fagy-resets.bar&sha256=6a5e2a44439e76f75707ba0e35e8837c10ebbc07338b899675a67049ee5fb782
 ```
 
-GitHub strips custom schemes from rendered Markdown, so that link is copyable text rather than a clickable anchor. `0tt0` in the links is a placeholder — replace it with your GitHub username before publishing, and re-compute the sha256 (`shasum -a 256 agy-resets.bar`) if the file changes.
+GitHub strips custom schemes from rendered Markdown, so that link is copyable text rather than a clickable anchor.
 
 The dashboard language follows your Metrix.Bar display language — Chinese for `zh*` locales, English otherwise. The language is captured when the dashboard's Worker is created, so reload the dashboard after switching your system or host language.
 
@@ -31,10 +31,22 @@ The dashboard language follows your Metrix.Bar display language — Chinese for 
 
 ## Good to know
 
-It refreshes every 2 minutes; a failed request keeps the last good data and offers Retry. Requests go straight to `agyresets.com`, so that host must be reachable. Alerts are on by default and can be turned off in dashboard settings. The Vue runtime loads at startup from a CDN — JSDMirror first, with jsDelivr as a fallback.
+It refreshes every 2 minutes; a failed request keeps the last good data and offers Retry. Requests go straight to `agyresets.com`, so that host must be reachable. Alerts are on by default and can be turned off in dashboard settings.
+
+## Development
+
+The `.bar` file is a build artifact — the source lives in `src/` and is bundled with esbuild (zero runtime dependencies; the script never loads anything besides the agyresets.com API).
+
+```sh
+npm install        # esbuild (dev dependency)
+node build.mjs     # bundle src/ into agy-resets.bar
+node build.mjs --check   # validate the committed .bar: XML, script syntax, build freshness
+```
+
+For smoke testing, a rendering harness (real API fixtures, mocked `$metrix`/`fetch`, both languages, error/retry, refresh dedup, timezone persistence, notification arming) lives outside the repo in `/tmp` and is run against the built `.bar`'s CDATA script.
 
 ## Credits & license
 
 Data comes from the public [agyresets.com](https://agyresets.com) API (watching @_mohansolo). Not affiliated with agyresets.com, Google, or Antigravity.
 
-[Apache-2.0](LICENSE). Vue is loaded from a CDN at startup (JSDMirror primary, jsDelivr fallback) and stays under MIT. "Google", "Antigravity", "Gemini" and "Argon" are trademarks of Google, used only to identify the monitored service.
+[Apache-2.0](LICENSE). "Google", "Antigravity", "Gemini" and "Argon" are trademarks of Google, used only to identify the monitored service.

@@ -8,15 +8,15 @@ Antigravity 额度什么时候重置，你不用再盯着官网刷新。
 
 点开下面的链接，再打开下载好的文件即可 —— Metrix.Bar 直接导入 `.bar`。
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.1.0/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.2.0/agy-resets.bar)
 
 也可以把下面这行粘到浏览器地址栏，直接从 CDN 导入：
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.1.0%2Fagy-resets.bar&sha256=0f31a92b3842fa177d74adcb38eddb5a4fb7c11975a421c0762c6c08bc381b02
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.2.0%2Fagy-resets.bar&sha256=6a5e2a44439e76f75707ba0e35e8837c10ebbc07338b899675a67049ee5fb782
 ```
 
-GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文本给出。安装链接中的 `0tt0` 是占位符——发布前请替换为你的 GitHub 用户名；若届时文件有改动，需重算 sha256（`shasum -a 256 agy-resets.bar`）并同步更新。
+GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文本给出。
 
 看板语言跟随 Metrix.Bar 宿主显示语言——`zh*` 显示中文，其余显示英文。语言在 Worker 创建（安装或重载看板）时捕获，切换系统或宿主语言后需重载看板才生效。
 
@@ -31,10 +31,22 @@ GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文
 
 ## 补充说明
 
-每 2 分钟刷新一次；请求失败会保留上一次的数据并给出重试，不会变成空面板。请求直连 `agyresets.com`，本机需要能访问该域名。提醒默认开启，可在看板设置里关闭。Vue 运行时在启动时从 CDN 加载：主源 JSDMirror，jsDelivr 兜底。
+每 2 分钟刷新一次；请求失败会保留上一次的数据并给出重试，不会变成空面板。请求直连 `agyresets.com`，本机需要能访问该域名。提醒默认开启，可在看板设置里关闭。
+
+## 开发
+
+`.bar` 文件是构建产物——源码在 `src/`，用 esbuild 打包（零运行时依赖；脚本除 agyresets.com API 外不加载任何东西）。
+
+```sh
+npm install        # 安装 esbuild（开发依赖）
+node build.mjs     # 打包 src/ 生成 agy-resets.bar
+node build.mjs --check   # 校验仓库内 .bar：XML 良构、脚本语法、构建新鲜度
+```
+
+冒烟测试（真实 API fixture、mock 的 `$metrix`/`fetch`、双语渲染、失败重试、刷新去重、时区持久化、通知武装）放在仓库外的 `/tmp`，对构建产物 CDATA 脚本运行。
 
 ## 来源与许可
 
 数据来自 [agyresets.com](https://agyresets.com) 的公开 API（监听 @_mohansolo 的推文整理），与本项目无隶属关系，也不代表 Google。
 
-[Apache-2.0](LICENSE)。Vue 运行时在启动时从 CDN 加载（主源 JSDMirror、jsDelivr 兜底），仍适用其 MIT 协议。「Google」「Antigravity」「Gemini」「Argon」为 Google 商标，仅用于标识所监控的服务。
+[Apache-2.0](LICENSE)。「Google」「Antigravity」「Gemini」「Argon」为 Google 商标，仅用于标识所监控的服务。
