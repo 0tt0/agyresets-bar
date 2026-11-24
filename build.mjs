@@ -9,7 +9,7 @@ import { join } from "node:path";
 import { ANTIGRAVITY_ICON } from "./src/icon.js";
 
 const OUT = "agy-resets.bar";
-const VERSION = "0.2.0";
+const VERSION = "0.2.1";
 
 async function bundle() {
   const result = await build({

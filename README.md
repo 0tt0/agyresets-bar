@@ -8,12 +8,12 @@ A menu bar dashboard for [Metrix.Bar](https://metrix.bar) that watches Google An
 
 Open the link, then open the downloaded file — Metrix.Bar imports `.bar` files directly.
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.2.0/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.2.1/agy-resets.bar)
 
 Or paste this into your browser's address bar to import straight from the CDN:
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.2.0%2Fagy-resets.bar&sha256=6a5e2a44439e76f75707ba0e35e8837c10ebbc07338b899675a67049ee5fb782
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.2.1%2Fagy-resets.bar&sha256=b6d171b3dc1499489f660a9d3da0dddf18dacde29d15add40a12ed8f3f232c7c
 ```
 
 GitHub strips custom schemes from rendered Markdown, so that link is copyable text rather than a clickable anchor.
