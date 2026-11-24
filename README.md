@@ -8,15 +8,15 @@ A menu bar dashboard for [Metrix.Bar](https://metrix.bar) that watches Google An
 
 Open the link, then open the downloaded file — Metrix.Bar imports `.bar` files directly.
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/YOURNAME/agyresets-bar@v0.1.0/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.1.0/agy-resets.bar)
 
 Or paste this into your browser's address bar to import straight from the CDN:
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FYOURNAME%2Fagyresets-bar%40v0.1.0%2Fagy-resets.bar&sha256=0f31a92b3842fa177d74adcb38eddb5a4fb7c11975a421c0762c6c08bc381b02
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.1.0%2Fagy-resets.bar&sha256=0f31a92b3842fa177d74adcb38eddb5a4fb7c11975a421c0762c6c08bc381b02
 ```
 
-GitHub strips custom schemes from rendered Markdown, so that link is copyable text rather than a clickable anchor. `YOURNAME` in the links is a placeholder — replace it with your GitHub username before publishing, and re-compute the sha256 (`shasum -a 256 agy-resets.bar`) if the file changes.
+GitHub strips custom schemes from rendered Markdown, so that link is copyable text rather than a clickable anchor. `0tt0` in the links is a placeholder — replace it with your GitHub username before publishing, and re-compute the sha256 (`shasum -a 256 agy-resets.bar`) if the file changes.
 
 The dashboard language follows your Metrix.Bar display language — Chinese for `zh*` locales, English otherwise. The language is captured when the dashboard's Worker is created, so reload the dashboard after switching your system or host language.
 

@@ -8,15 +8,15 @@ Antigravity 额度什么时候重置，你不用再盯着官网刷新。
 
 点开下面的链接，再打开下载好的文件即可 —— Metrix.Bar 直接导入 `.bar`。
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/YOURNAME/agyresets-bar@v0.1.0/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.1.0/agy-resets.bar)
 
 也可以把下面这行粘到浏览器地址栏，直接从 CDN 导入：
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FYOURNAME%2Fagyresets-bar%40v0.1.0%2Fagy-resets.bar&sha256=0f31a92b3842fa177d74adcb38eddb5a4fb7c11975a421c0762c6c08bc381b02
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.1.0%2Fagy-resets.bar&sha256=0f31a92b3842fa177d74adcb38eddb5a4fb7c11975a421c0762c6c08bc381b02
 ```
 
-GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文本给出。安装链接中的 `YOURNAME` 是占位符——发布前请替换为你的 GitHub 用户名；若届时文件有改动，需重算 sha256（`shasum -a 256 agy-resets.bar`）并同步更新。
+GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文本给出。安装链接中的 `0tt0` 是占位符——发布前请替换为你的 GitHub 用户名；若届时文件有改动，需重算 sha256（`shasum -a 256 agy-resets.bar`）并同步更新。
 
 看板语言跟随 Metrix.Bar 宿主显示语言——`zh*` 显示中文，其余显示英文。语言在 Worker 创建（安装或重载看板）时捕获，切换系统或宿主语言后需重载看板才生效。
 
