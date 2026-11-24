@@ -29,6 +29,8 @@ The dashboard language follows your Metrix.Bar display language — Chinese for 
 - **A notification when a new announcement drops**, and never a stale one on install.
 - **One-click screenshot sharing.**
 
+![The AGY Resets panel: latest reset, stats, a four-month calendar and recent announcements](screenshot.webp)
+
 ## Good to know
 
 It refreshes every 2 minutes; a failed request keeps the last good data and offers Retry. Requests go straight to `agyresets.com`, so that host must be reachable. Alerts are on by default and can be turned off in dashboard settings.
