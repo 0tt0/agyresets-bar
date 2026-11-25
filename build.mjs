@@ -9,7 +9,7 @@ import { join } from "node:path";
 import { ANTIGRAVITY_ICON } from "./src/icon.js";
 
 const OUT = "agy-resets.bar";
-const VERSION = "0.2.1";
+const VERSION = "0.3.0";
 
 async function bundle() {
   const result = await build({
@@ -29,17 +29,21 @@ async function bundle() {
 
 // .bar 模板：根元素全部属性 + permissions + inputs + docs + script CDATA。
 // 与 v0.1.0 保持一致：无 XML 声明，直接以 <bar> 开头。script 为构建产物，源码在 src/，请勿手改此文件。
+// description/docs 默认中文单语，<locale lang="en"> 提供英文（0.2.0–0.3.3 旧宿主忽略 locale，显示默认）。
 const template = js => `<bar protocol-version="0"
      id="agy-resets"
      title="AGY Resets"
      version="${VERSION}"
+     license="Apache-2.0"
      category="ai"
      refresh="2m"
      placements="menubar"
      open-mode="flyout"
-     description="追踪 Antigravity 额度重置公告并在新公告时提醒 / Track Antigravity quota reset announcements from agyresets.com and get notified."
+     description="追踪 Antigravity 额度重置公告，新公告时提醒"
      homepage="https://agyresets.com"
      icon="${ANTIGRAVITY_ICON}">
+
+  <locale lang="en" description="Track Antigravity quota reset announcements from agyresets.com and get notified when a new one drops." />
 
   <permissions>
     <network origin="https://agyresets.com" />
@@ -55,11 +59,9 @@ const template = js => `<bar protocol-version="0"
     </input>
   </inputs>
 
-  <docs><![CDATA[数据来自 agyresets.com 的公开 API（监听 @_mohansolo 的推文整理 Google Antigravity 的 Gemini/Argon 额度重置公告）。首次加载只记录最新公告，之后每 2 分钟检查一次，出现新公告时可通过「新重置提醒」开关控制系统通知。面板固定展示最近 3 条公告，完整归档请点击「在官网查看全部」跳转 agyresets.com。界面语言跟随 Metrix.Bar 显示语言（安装或重载看板时确定）。
+  <docs><![CDATA[数据来自 agyresets.com 的公开 API（监听 @_mohansolo 的推文整理 Google Antigravity 的 Gemini/Argon 额度重置公告）。首次加载只记录最新公告，之后每 2 分钟检查一次，出现新公告时可通过「新重置提醒」开关控制系统通知。面板固定展示最近 3 条公告，完整归档请点击「在官网查看全部」跳转 agyresets.com。界面语言跟随 Metrix.Bar 显示语言（安装或重载看板时确定）。]]><locale lang="en"><![CDATA[Data comes from the public agyresets.com API, which watches @_mohansolo's posts and compiles Google Antigravity (Gemini/Argon) quota reset announcements. On first load only the latest announcement is recorded; after that it checks every 2 minutes, and a system notification fires when a new announcement appears (toggle "New reset alerts" in settings). The panel shows the latest 3 announcements; open agyresets.com for the full archive. The interface language follows your Metrix.Bar display language (set when the dashboard is installed or reloaded).]]></locale></docs>
 
-English: tracks Google Antigravity (Gemini/Argon) quota reset announcements from the public agyresets.com API, checks every 2 minutes, and notifies you when a new one appears. The dashboard language follows your Metrix.Bar display language.]]></docs>
-
-  <script apis="screenshot clipboard shell"><![CDATA[
+  <script apis="screenshot clipboard shell notification caches"><![CDATA[
 ${js}
   ]]></script>
 </bar>

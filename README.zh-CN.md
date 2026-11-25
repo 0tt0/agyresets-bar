@@ -8,12 +8,12 @@ Antigravity 额度什么时候重置，你不用再盯着官网刷新。
 
 点开下面的链接，再打开下载好的文件即可 —— Metrix.Bar 直接导入 `.bar`。
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.2.1/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.3.0/agy-resets.bar)
 
 也可以把下面这行粘到浏览器地址栏，直接从 CDN 导入：
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.2.1%2Fagy-resets.bar&sha256=b6d171b3dc1499489f660a9d3da0dddf18dacde29d15add40a12ed8f3f232c7c
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.3.0%2Fagy-resets.bar&sha256=f59425f6ecbe4128256dd7e02e97834ace59e2a45d519098e88a447b39a474dc
 ```
 
 GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文本给出。
@@ -26,7 +26,8 @@ GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文
 - **分清每次重置的范围**，徽章标明影响的模型（Gemini / Argon / 全部）与人群（全员 / 付费）。
 - **近四个月日历**，看到节奏而不只是最新一次。
 - **与官网首页对齐的统计**：重置次数、平均间隔、最长间隔。
-- **新公告才发通知**，刚装完不会蹦出过期的。
+- **新公告才发通知**，刚装完不会蹦出过期的；点击通知直达公告原文。
+- **断网或重启后显示缓存的上次数据**，并标注上次失败。
 - **点一下把面板截图复制到剪贴板**。
 
 ![AGY Resets 面板：最近一次重置、统计、四个月日历与公告流](screenshot.webp)

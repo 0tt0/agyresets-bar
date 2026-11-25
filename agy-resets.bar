@@ -1,14 +1,17 @@
 <bar protocol-version="0"
      id="agy-resets"
      title="AGY Resets"
-     version="0.2.1"
+     version="0.3.0"
+     license="Apache-2.0"
      category="ai"
      refresh="2m"
      placements="menubar"
      open-mode="flyout"
-     description="追踪 Antigravity 额度重置公告并在新公告时提醒 / Track Antigravity quota reset announcements from agyresets.com and get notified."
+     description="追踪 Antigravity 额度重置公告，新公告时提醒"
      homepage="https://agyresets.com"
      icon="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEzNiAxMzYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN0eWxlPi5mYXYtYmcgeyBmaWxsOiAjRkZGRkZGOyB9QG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgey5mYXYtYmcgeyBmaWxsOiAjMDAwMDAwOyB9fTwvc3R5bGU+PGNpcmNsZSBjbGFzcz0iZmF2LWJnIiBjeD0iNjgiIGN5PSI2OCIgcj0iNjUiIGZpbGw9IiNGRkZGRkYiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMCkiPjxwYXRoIGQ9Ik04OS42OTkyIDkzLjY5NUM5NC4zNjU5IDk3LjE5NSAxMDEuMzY2IDk0Ljg2MTcgOTQuOTQ5MiA4OC40NDVDNzUuNjk5MiA2OS43NzgzIDc5Ljc4MjUgMTguNDQ1IDU1Ljg2NTkgMTguNDQ1QzMxLjk0OTIgMTguNDQ1IDM2LjAzMjUgNjkuNzc4MyAxNi43ODI1IDg4LjQ0NUM5Ljc4MjUxIDk1LjQ0NSAxNy4zNjU4IDk3LjE5NSAyMi4wMzI1IDkzLjY5NUM0MC4xMTU5IDgxLjQ0NSAzOC45NDkyIDU5Ljg2MTcgNTUuODY1OSA1OS44NjE3QzcyLjc4MjUgNTkuODYxNyA3MS42MTU5IDgxLjQ0NSA4OS42OTkyIDkzLjY5NVoiIGZpbGw9IiMzMTg2RkYiLz48bWFzayBpZD0iYWdfZmF2X20iIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjEzIiB5PSIxOCIgd2lkdGg9Ijg1IiBoZWlnaHQ9Ijc4Ij48cGF0aCBkPSJNODkuNjk5MiA5My42OTVDOTQuMzY1OSA5Ny4xOTUgMTAxLjM2NiA5NC44NjE3IDk0Ljk0OTIgODguNDQ1Qzc1LjY5OTIgNjkuNzc4MyA3OS43ODI1IDE4LjQ0NSA1NS44NjU5IDE4LjQ0NUMzMS45NDkyIDE4LjQ0NSAzNi4wMzI1IDY5Ljc3ODMgMTYuNzgyNSA4OC40NDVDOS43ODI1MSA5NS40NDUgMTcuMzY1OCA5Ny4xOTUgMjIuMDMyNSA5My42OTVDNDAuMTE1OSA4MS40NDUgMzguOTQ5MiA1OS44NjE3IDU1Ljg2NTkgNTkuODYxN0M3Mi43ODI1IDU5Ljg2MTcgNzEuNjE1OSA4MS40NDUgODkuNjk5MiA5My42OTVaIiBmaWxsPSJibGFjayIvPjwvbWFzaz48ZyBtYXNrPSJ1cmwoI2FnX2Zhdl9tKSI+PGcgZmlsdGVyPSJ1cmwoI2FnX2Zhdl9mMCkiPjxlbGxpcHNlIGN4PSIyMi43ODczIiBjeT0iMjYuODA5OCIgcng9IjIyLjc4NzMiIHJ5PSIyNi44MDk4IiB0cmFuc2Zvcm09Im1hdHJpeCgtMC4xMTI3ODQgMC45OTM2MiAtMC45OTM2MiAtMC4xMTI3ODEgNjYuMjQ3MyAtMTUuNTM0NCkiIGZpbGw9IiNGRkU0MzIiLz48L2c+PGcgZmlsdGVyPSJ1cmwoI2FnX2Zhdl9mMSkiPjxlbGxpcHNlIGN4PSI5Ni40OTEiIGN5PSIzNS4xMjMxIiByeD0iMjkuNTAwNyIgcnk9IjMwLjE0OTIiIHRyYW5zZm9ybT0icm90YXRlKDc2LjkyNDMgOTYuNDkxIDM1LjEyMzEpIiBmaWxsPSIjRkM0MTNEIi8+PC9nPjxnIGZpbHRlcj0idXJsKCNhZ19mYXZfZjIpIj48ZWxsaXBzZSBjeD0iOS4wMjk4OCIgY3k9IjQxLjY2NDciIHJ4PSIzMC44MzIiIHJ5PSIzOS45NDE3IiB0cmFuc2Zvcm09InJvdGF0ZSg3NC4xMjU3IDkuMDI5ODggNDEuNjY0NykiIGZpbGw9IiMwMEI5NUMiLz48L2c+PGcgZmlsdGVyPSJ1cmwoI2FnX2Zhdl9mMykiPjxlbGxpcHNlIGN4PSIxMS4yMjEyIiBjeT0iNDIuODkxNSIgcng9IjMwLjIyIiByeT0iMzMuMjY5NSIgdHJhbnNmb3JtPSJyb3RhdGUoNDUuNjA2NSAxMS4yMjEyIDQyLjg5MTUpIiBmaWxsPSIjMDBCOTVDIi8+PC9nPjxnIGZpbHRlcj0idXJsKCNhZ19mYXZfZjQpIj48ZWxsaXBzZSBjeD0iNzUuNzU0NiIgY3k9IjEwNC44MjIiIHJ4PSIyOS4wMTc3IiByeT0iMjcuOTQzIiB0cmFuc2Zvcm09InJvdGF0ZSg3Ni45MjQzIDc1Ljc1NDYgMTA0LjgyMikiIGZpbGw9IiMzMTg2RkYiLz48L2c+PGcgZmlsdGVyPSJ1cmwoI2FnX2Zhdl9mNSkiPjxlbGxpcHNlIGN4PSIzMy41NjYxIiBjeT0iMzUuNDA0MyIgcng9IjMzLjU2NjEiIHJ5PSIzNS40MDQzIiB0cmFuc2Zvcm09Im1hdHJpeCgtMC40MDk1MzkgMC45MTIyOTMgLTAuOTEyMjk0IC0wLjQwOTUzNyAxMDEuMjUgLTE1LjE2NzQpIiBmaWxsPSIjRkJCQzA0Ii8+PC9nPjxnIGZpbHRlcj0idXJsKCNhZ19mYXZfZjYpIj48cGF0aCBkPSJNMi41NjgwMiAxNDkuNjk1Qy0xNS44MTE2IDE0Mi40OCAxNS41OTg3IDgzLjExNjMgMjMuNDA5MyA2My4yMjAzQzMxLjIyIDQzLjMyNDQgNTIuNDUxNCAzMy4wNDQ3IDcwLjgzMSA0MC4yNkM4OS4yMTA3IDQ3LjQ3NTMgMTEwLjk5NiA4Ny4yMTYyIDEwMy4xODUgMTA3LjExMkM5NS4zNzQyIDEyNy4wMDggMjAuOTQ3NyAxNTYuOTEgMi41NjgwMiAxNDkuNjk1WiIgZmlsbD0iIzMxODZGRiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjYWdfZmF2X2Y3KSI+PHBhdGggZD0iTTExMy45MzQgNzUuODA3OUMxMDkuMDEzIDgxLjU1MDkgOTYuMTcyNCA3OC42MjI0IDg1LjI1MyA2OS4yNjY3Qzc0LjMzMzUgNTkuOTExIDY5LjQ3MDQgNDcuNjcxMSA3NC4zOTEgNDEuOTI4Qzc5LjMxMTYgMzYuMTg1IDkyLjE1MjUgMzkuMTEzNiAxMDMuMDcyIDQ4LjQ2OTJDMTEzLjk5MSA1Ny44MjQ5IDExOC44NTUgNzAuMDY0OCAxMTMuOTM0IDc1LjgwNzlaIiBmaWxsPSIjNzQ5QkZGIi8+PC9nPjxnIGZpbHRlcj0idXJsKCNhZ19mYXZfZjgpIj48ZWxsaXBzZSBjeD0iOTIuNjExIiBjeT0iMjMuNzk2MiIgcng9IjQ0LjI0MTEiIHJ5PSIyNy41MDE2IiB0cmFuc2Zvcm09InJvdGF0ZSgzNC4wNzYzIDkyLjYxMSAyMy43OTYyKSIgZmlsbD0iI0ZDNDEzRCIvPjwvZz48ZyBmaWx0ZXI9InVybCgjYWdfZmF2X2Y5KSI+PGVsbGlwc2UgY3g9IjIzLjQ5NDkiIGN5PSIyOS41ODg3IiByeD0iMjMuNzA3MSIgcnk9IjEzLjc4NjkiIHRyYW5zZm9ybT0icm90YXRlKDExMi41MTYgMjMuNDk0OSAyOS41ODg3KSIgZmlsbD0iI0ZGRUU0OCIvPjwvZz48L2c+PC9nPjxkZWZzPjxmaWx0ZXIgaWQ9ImFnX2Zhdl9mMCIgeD0iMi40OTM0OCIgeT0iLTI2LjU0MjMiIHdpZHRoPSI2OS4wODk5IiBoZWlnaHQ9IjYxLjI1MjUiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIzLjg5MDM0Ii8+PC9maWx0ZXI+PGZpbHRlciBpZD0iYWdfZmF2X2YxIiB4PSIyOC43NTI0IiB5PSItMzIuMDMzMyIgd2lkdGg9IjEzNS40NzciIGhlaWdodD0iMTM0LjMxMyIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjE4LjgwNzgiLz48L2ZpbHRlcj48ZmlsdGVyIGlkPSJhZ19mYXZfZjIiIHg9Ii02Mi4yODg0IiB5PSItMjEuOTI1MyIgd2lkdGg9IjE0Mi42MzciIGhlaWdodD0iMTI3LjE4IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTUuOTg4NCIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImFnX2Zhdl9mMyIgeD0iLTUyLjU2OTciIHk9Ii0yMC44MzQ2IiB3aWR0aD0iMTI3LjU4MiIgaGVpZ2h0PSIxMjcuNDUyIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTUuOTg4NCIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImFnX2Zhdl9mNCIgeD0iMTcuMzYxOSIgeT0iNDUuNDY0NiIgd2lkdGg9IjExNi43ODYiIGhlaWdodD0iMTE4LjcxNSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjE1LjE5MzciLz48L2ZpbHRlcj48ZmlsdGVyIGlkPSJhZ19mYXZfZjUiIHg9Ii03LjQ0NzY1IiB5PSItNjAuNDczNyIgd2lkdGg9IjEyNS4zMDMiIGhlaWdodD0iMTIyLjg1OCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEzLjc2OTgiLz48L2ZpbHRlcj48ZmlsdGVyIGlkPSJhZ19mYXZfZjYiIHg9Ii0yNy43MDg2IiB5PSIxMy4zNTk3IiB3aWR0aD0iMTU3LjExOSIgaGVpZ2h0PSIxNjIuMDI5IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTIuMjk3Ii8+PC9maWx0ZXI+PGZpbHRlciBpZD0iYWdfZmF2X2Y3IiB4PSI1MC40NjM4IiB5PSIxNi45ODEiIHdpZHRoPSI4Ny4zOTczIiBoZWlnaHQ9IjgzLjc3MzgiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMS4wMDM2Ii8+PC9maWx0ZXI+PGZpbHRlciBpZD0iYWdfZmF2X2Y4IiB4PSIzNC4yNjA0IiB5PSItMjguNDU3IiB3aWR0aD0iMTE2LjcwMSIgaGVpZ2h0PSIxMDQuNTA2IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iOS4yOTM4NSIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImFnX2Zhdl9mOSIgeD0iLTE1LjE1MjIiIHk9Ii0xNS45NDkzIiB3aWR0aD0iNzcuMjk0MSIgaGVpZ2h0PSI5MS4wNzYiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMS41MDI3Ii8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==">
+
+  <locale lang="en" description="Track Antigravity quota reset announcements from agyresets.com and get notified when a new one drops." />
 
   <permissions>
     <network origin="https://agyresets.com" />
@@ -24,11 +27,9 @@
     </input>
   </inputs>
 
-  <docs><![CDATA[数据来自 agyresets.com 的公开 API（监听 @_mohansolo 的推文整理 Google Antigravity 的 Gemini/Argon 额度重置公告）。首次加载只记录最新公告，之后每 2 分钟检查一次，出现新公告时可通过「新重置提醒」开关控制系统通知。面板固定展示最近 3 条公告，完整归档请点击「在官网查看全部」跳转 agyresets.com。界面语言跟随 Metrix.Bar 显示语言（安装或重载看板时确定）。
+  <docs><![CDATA[数据来自 agyresets.com 的公开 API（监听 @_mohansolo 的推文整理 Google Antigravity 的 Gemini/Argon 额度重置公告）。首次加载只记录最新公告，之后每 2 分钟检查一次，出现新公告时可通过「新重置提醒」开关控制系统通知。面板固定展示最近 3 条公告，完整归档请点击「在官网查看全部」跳转 agyresets.com。界面语言跟随 Metrix.Bar 显示语言（安装或重载看板时确定）。]]><locale lang="en"><![CDATA[Data comes from the public agyresets.com API, which watches @_mohansolo's posts and compiles Google Antigravity (Gemini/Argon) quota reset announcements. On first load only the latest announcement is recorded; after that it checks every 2 minutes, and a system notification fires when a new announcement appears (toggle "New reset alerts" in settings). The panel shows the latest 3 announcements; open agyresets.com for the full archive. The interface language follows your Metrix.Bar display language (set when the dashboard is installed or reloaded).]]></locale></docs>
 
-English: tracks Google Antigravity (Gemini/Argon) quota reset announcements from the public agyresets.com API, checks every 2 minutes, and notifies you when a new one appears. The dashboard language follows your Metrix.Bar display language.]]></docs>
-
-  <script apis="screenshot clipboard shell"><![CDATA[
+  <script apis="screenshot clipboard shell notification caches"><![CDATA[
 // src/i18n.js
 var LANG = String(navigator.language || "en").toLowerCase().startsWith("zh") ? "zh" : "en";
 var SITE = "https://agyresets.com";
@@ -76,7 +77,7 @@ var I18N = {
     "\u7F51\u7EDC\u9519\u8BEF": (status) => "\u8BF7\u6C42\u5931\u8D25\uFF1AHTTP " + status,
     "\u683C\u5F0F\u9519\u8BEF": "\u54CD\u5E94\u65E0\u6548\u3002",
     "\u901A\u77E5\u6807\u9898": "Antigravity \u989D\u5EA6\u5DF2\u91CD\u7F6E",
-    "\u901A\u77E5\u515C\u5E95": "\u67E5\u770B\u516C\u544A\u539F\u6587",
+    "\u901A\u77E5\u515C\u5E95": "\u70B9\u51FB\u67E5\u770B\u516C\u544A",
     "\u622A\u56FE\u4E0D\u652F\u6301": "\u8BF7\u5347\u7EA7 Metrix.Bar",
     "\u622A\u56FE\u6210\u529F": "\u5DF2\u590D\u5236\u622A\u56FE",
     "\u622A\u56FE\u5931\u8D25": (msg) => "\u622A\u56FE\u5931\u8D25\uFF1A" + msg,
@@ -125,7 +126,7 @@ var I18N = {
     "\u7F51\u7EDC\u9519\u8BEF": (status) => "Request failed: HTTP " + status,
     "\u683C\u5F0F\u9519\u8BEF": "Invalid response.",
     "\u901A\u77E5\u6807\u9898": "Antigravity quota reset",
-    "\u901A\u77E5\u515C\u5E95": "Open the announcement",
+    "\u901A\u77E5\u515C\u5E95": "Click to open the announcement",
     "\u622A\u56FE\u4E0D\u652F\u6301": "Update Metrix.Bar to screenshot",
     "\u622A\u56FE\u6210\u529F": "Screenshot copied",
     "\u622A\u56FE\u5931\u8D25": (msg) => "Screenshot failed: " + msg,
@@ -180,6 +181,13 @@ async function getJSON(url) {
   } catch {
   }
   if (!body || typeof body !== "object") throw new Error(t("\u683C\u5F0F\u9519\u8BEF"));
+  try {
+    const saved = new Response(JSON.stringify(body), {
+      headers: { "content-type": "application/json", "x-saved-at": String(Date.now()) }
+    });
+    await caches.default.put(url, saved);
+  } catch {
+  }
   return body;
 }
 
@@ -266,19 +274,39 @@ async function load(env) {
       const on = !(env && env.inputs && env.inputs.notifyEnabled === false);
       if (on) {
         const summary = latest.text.length > 120 ? latest.text.slice(0, 117) + "\u2026" : latest.text;
-        $metrix.notify(t("\u901A\u77E5\u6807\u9898"), summary || t("\u901A\u77E5\u515C\u5E95"));
+        const n = new Notification(t("\u901A\u77E5\u6807\u9898"), { body: summary || t("\u901A\u77E5\u515C\u5E95"), tag: "reset" });
+        if (latest.url) n.onclick = () => $metrix.openURL(latest.url);
         $metrix.toast(t("\u901A\u77E5\u6807\u9898"));
       }
     }
     state.seenId = latest.id;
   }
 }
+async function loadFromCache(e) {
+  state.error = String(e && e.message || e);
+  if (state.status || state.resets.length) return;
+  const c = globalThis.caches && caches.default;
+  if (!c) return;
+  try {
+    const [st, rs] = await Promise.all([
+      c.match(API + "/status"),
+      c.match(API + "/resets?limit=100")
+    ]);
+    const savedAt = st && st.headers ? Number(st.headers.get("x-saved-at")) || 0 : 0;
+    const next = st ? readStatus(await st.json()) : null;
+    const rawList = rs ? await rs.json() : null;
+    const list = Array.isArray(rawList && rawList.data) ? rawList.data.map(readReset).filter(Boolean) : [];
+    if (!next && !list.length) return;
+    state.status = next;
+    state.resets = list;
+    state.lastLoadedAt = savedAt || state.lastLoadedAt;
+  } catch {
+  }
+}
 function refresh(env) {
   if (inflight) return inflight;
   $metrix.invalidate();
-  inflight = load(env).catch((e) => {
-    state.error = String(e && e.message || e);
-  }).finally(() => {
+  inflight = load(env).catch(loadFromCache).finally(() => {
     inflight = null;
     $metrix.invalidate();
   });
@@ -761,7 +789,7 @@ function trayTree() {
   if (days == null) days = daysSince(s && s.lastResetAt || latest && latest.at || "");
   const title = days != null ? fmtDays(days) + "d" : state.error ? "!" : "\u2014";
   const tip = latest && latest.text ? "AGY Resets \xB7 " + t("\u6258\u76D8\u6700\u8FD1\u91CD\u7F6E") + relTime(latest.at) + " \xB7 " + latest.text.slice(0, 60) : "AGY Resets";
-  return {
+  const tray = {
     icon: AGY_ICON,
     iconTemplate: true,
     title,
@@ -770,6 +798,8 @@ function trayTree() {
       { label: t("\u83DC\u5355\u6253\u5F00\u5B98\u7F51"), onClick: openSite }
     ]
   };
+  if (!state.status && !state.resets.length && state.error) tray.error = state.error;
+  return tray;
 }
 function panelTree() {
   const inner = isSharing() ? el("Column", { fillWidth: true, height: SHOT_HEIGHT, background: C.PAPER }, Body()) : el("Scroll", { grow: 1, basis: 0, fillWidth: true }, Body());

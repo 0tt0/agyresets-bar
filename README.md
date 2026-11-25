@@ -8,12 +8,12 @@ A menu bar dashboard for [Metrix.Bar](https://metrix.bar) that watches Google An
 
 Open the link, then open the downloaded file — Metrix.Bar imports `.bar` files directly.
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.2.1/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.3.0/agy-resets.bar)
 
 Or paste this into your browser's address bar to import straight from the CDN:
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.2.1%2Fagy-resets.bar&sha256=b6d171b3dc1499489f660a9d3da0dddf18dacde29d15add40a12ed8f3f232c7c
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.3.0%2Fagy-resets.bar&sha256=f59425f6ecbe4128256dd7e02e97834ace59e2a45d519098e88a447b39a474dc
 ```
 
 GitHub strips custom schemes from rendered Markdown, so that link is copyable text rather than a clickable anchor.
@@ -26,10 +26,11 @@ The dashboard language follows your Metrix.Bar display language — Chinese for 
 - **Scope badges** — which models (Gemini, Argon, all) and plans (everyone, paid) each reset covers.
 - **A four-month calendar** — the rhythm, not just the latest entry.
 - **Stats**: total resets, average interval, longest gap — matching the agyresets.com homepage.
-- **A notification when a new announcement drops**, and never a stale one on install.
+- **A notification when a new announcement drops**, and never a stale one on install. Click it to jump straight to the announcement.
+- **Cached data after a restart or offline**: the last good data is shown, marked as last failed.
 - **One-click screenshot sharing.**
 
-![The AGY Resets panel: latest reset, stats, a four-month calendar and recent announcements](screenshot.webp)
+![The AGY Resets panel: latest reset, stats, a four-month calendar and recent announcements](screenshot-en.webp)
 
 ## Good to know
 
