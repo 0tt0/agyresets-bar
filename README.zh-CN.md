@@ -8,12 +8,12 @@ Antigravity 额度什么时候重置，你不用再盯着官网刷新。
 
 点开下面的链接，再打开下载好的文件即可 —— Metrix.Bar 直接导入 `.bar`。
 
-- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.3.0/agy-resets.bar)
+- [`agy-resets.bar`](https://cdn.jsdelivr.net/gh/0tt0/agyresets-bar@v0.3.1/agy-resets.bar)
 
 也可以把下面这行粘到浏览器地址栏，直接从 CDN 导入：
 
 ```text
-metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.3.0%2Fagy-resets.bar&sha256=f59425f6ecbe4128256dd7e02e97834ace59e2a45d519098e88a447b39a474dc
+metrixbar://install?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2F0tt0%2Fagyresets-bar%40v0.3.1%2Fagy-resets.bar&sha256=ac85b3007f28538b6446240ae9d3f25d056e1ca23e268d8b68696245c388913f
 ```
 
 GitHub 渲染 Markdown 时会剥离自定义协议，所以这里以可复制文本给出。
